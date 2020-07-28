@@ -1,10 +1,10 @@
 {
-  "name": "vue-school-test-utils-base",
+  "name": "@avi/vue-components",
   "version": "1.0.0",
   "private": true,
   "author": {
-    "name": "Roman Kuba",
-    "email": "roman.kuba@gmail.com"
+    "name": "Avi Mehenwal",
+    "email": "avi.mehanwal@gmail.com"
   },
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -56,13 +56,13 @@
   },
   "_id": "vue-school-test-utils-base@1.0.0",
   "bugs": {
-    "url": "https://github.com/codebryo/vue-school-test-utils-base/issues"
+    "url": "https://github.com/avimehenwal/vue-components/issues"
   },
-  "homepage": "https://github.com/codebryo/vue-school-test-utils-base#readme",
+  "homepage": "https://github.com/avimehenwal/vue-components#readme",
   "license": "MIT",
   "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codebryo/vue-school-test-utils-base.git"
+    "url": "git+https://github.com:avimehenwal/vue-components.git"
   }
 }
