@@ -7,7 +7,10 @@
     "email": "avi.mehanwal@gmail.com"
   },
   "scripts": {
-    "tbs": "yarn jest specs/test.spec.js -u && yarn --cwd ./Apps/default/ build && yarn --cwd ./Apps/default/ serve"
+    "serve": "yarn --cwd ./Apps/default/ serve",
+    "build:umd": "yarn --cwd ./Apps/default/ vue-cli-service build --target lib --inline-vue",
+    "build": "yarn --cwd ./Apps/default/ build",
+    "tbs": "yarn jest && yarn build && yarn serve"
   },
   "main": "index.js",
   "dependencies": {

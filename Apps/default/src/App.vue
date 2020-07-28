@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="w3-container">
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
@@ -9,8 +9,16 @@
   </div>
 </template>
 
+<script>
+import 'w3-css/w3.css'
+
+export default {
+
+}
+</script>
+
 <style>
-#app {
+/* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -29,5 +37,5 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
-}
+} */
 </style>
