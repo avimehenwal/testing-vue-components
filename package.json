@@ -1,21 +1,68 @@
 {
   "name": "vue-school-test-utils-base",
   "version": "1.0.0",
+  "private": true,
+  "author": {
+    "name": "Roman Kuba",
+    "email": "roman.kuba@gmail.com"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "test:e2e": "vue-cli-service test:e2e",
+    "lint": "vue-cli-service lint"
+  },
   "main": "index.js",
-  "repository": "https://github.com/codebryo/vue-school-test-utils-base.git",
-  "author": "Roman Kuba <roman.kuba@gmail.com>",
-  "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
     "@vue/test-utils": "^1.0.3",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^24.5.0",
+    "core-js": "^3.6.5",
     "jest": "^24.5.0",
     "jest-serializer-vue": "^2.0.2",
-    "vue": "^2.6.9",
+    "register-service-worker": "^1.7.1",
+    "vue": "^2.6.11",
+    "vue-class-component": "^7.2.3",
     "vue-jest": "^3.0.6",
+    "vue-property-decorator": "^8.4.2",
+    "vue-router": "^3.2.0",
     "vue-template-compiler": "^2.6.11",
-    "vuex": "^3.1.1"
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.19",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "@vue/cli-plugin-babel": "~4.4.0",
+    "@vue/cli-plugin-e2e-cypress": "~4.4.0",
+    "@vue/cli-plugin-eslint": "~4.4.0",
+    "@vue/cli-plugin-pwa": "~4.4.0",
+    "@vue/cli-plugin-router": "~4.4.0",
+    "@vue/cli-plugin-typescript": "~4.4.0",
+    "@vue/cli-plugin-unit-jest": "~4.4.0",
+    "@vue/cli-plugin-vuex": "~4.4.0",
+    "@vue/cli-service": "~4.4.0",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "@vue/test-utils": "^1.0.3",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
+    "typescript": "~3.9.3",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "_id": "vue-school-test-utils-base@1.0.0",
+  "bugs": {
+    "url": "https://github.com/codebryo/vue-school-test-utils-base/issues"
+  },
+  "homepage": "https://github.com/codebryo/vue-school-test-utils-base#readme",
+  "license": "MIT",
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codebryo/vue-school-test-utils-base.git"
   }
 }

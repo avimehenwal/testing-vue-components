@@ -1,28 +1,37 @@
-# Testing Vue.js Components
+# vue-school-test-utils-base
 
-[![](https://vueschool.s3.amazonaws.com/9318e19655ce267304ebf5df7eca7154/testing-vuejs-components.png)](https://vueschool.io/courses/learn-how-to-test-vuejs-components)
+## Project setup
+```
+yarn install
+```
 
-This repository contains the the starting point of the [Testing Vue.js Components](https://vueschool.io/courses/learn-how-to-test-vuejs-components) course.
+### Compiles and hot-reloads for development
+```
+yarn serve
+```
 
-Learn how to test your Vue.js components like a pro with Jest and the official unit testing library for Vue.js - Vue Test Utils
+### Compiles and minifies for production
+```
+yarn build
+```
 
-In this course, you’ll learn everything you need to know to write proper unit tests for your Vue components.
+### Run your unit tests
+```
+yarn test:unit
+```
 
-Not sure how to mount and render your component to perform assertions. Not sure what you should and shouldn't test? Or how to test a specific thing? This course is for you!
+### Run your end-to-end tests
+```
+yarn test:e2e
+```
 
-**By the end of this testing course you will know**
-- Which tools are required for an efficient testing workflow
-- How to mount and render your Vue components
-- How to programmatically interact with your components through Vue Test Utils
-- How to test computed properties and watchers
-- How to test Vue.js lifecycle methods
-- How to traverse the DOM and test …
-- How to stub child components
-- How to test that a Vuex Store is injected properly
+### Lints and fixes files
+```
+yarn lint
+```
 
-You need a basic understanding of testing in JavaScript and Jest. We recommend watching [JavaScript Testing Fundamentals](https://vueschool.io/courses/javascript-testing-fundamentals) and [Test with Jest](https://vueschool.io/courses/test-with-jest) if you're not already familiar with the topics.
-
-[Click here to watch the testing course](https://vueschool.io/courses/learn-how-to-test-vuejs-components).
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
 ## Issues to Address

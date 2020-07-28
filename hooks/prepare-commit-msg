@@ -11,7 +11,7 @@ SUMMARY=$(git diff --staged --shortstat)
 #     SCORE=$(git diff --staged --name-only | grep py | xargs pylint | grep "Your code has been rated")
 # fi
 
-echo -e "$TFILES Files | $RSIZE | $BRANCH |$SUMMARY" >> $1
+echo -e "\n$TFILES Files | $RSIZE | $BRANCH |$SUMMARY" >> $1
 # Testing
 # echo -e "$TFILES Files | $RSIZE | $BRANCH |$SUMMARY"
 
