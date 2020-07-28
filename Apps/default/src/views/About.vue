@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import TestComponent from '@/../components/test.vue'
+import TestComponent from '@/../../../src/test.vue'
 
 export default {
   name: 'Home',

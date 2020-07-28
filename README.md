@@ -14,16 +14,19 @@
 ## :wrench: Installation / How to run?
 
 ```
+yarn jest specs/test.spec.js -u; and yarn build; and yarn serve
+```
 
 
 ## Issues to Address
 
-* [ ] Devtools for vue 3
-
 ```
 vue add vue-next
+yarn jest specs/test.spec.js -u; and yarn build; and yarn serve
 ```
-```
+
+* [ ] Devtools for vue 3
+* [ ] Seperate dir to build new vue app to test components, in root dir tends to overrite config files
 
 ## :pushpin: ToDos
 

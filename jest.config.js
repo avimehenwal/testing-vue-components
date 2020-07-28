@@ -2,12 +2,12 @@ module.exports = {
   // preset: '@vue/cli-plugin-unit-jest/presets/typescript-and-babel',
   verbose: true,
   roots: [
-    "<rootDir>/components/",
+    "<rootDir>/src/",
     "<rootDir>/specs/"
   ],
   moduleFileExtensions: ['js', 'vue'],
   moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/components/$1',
+    '^@/(.*)$': '<rootDir>/src/$1',
   },
   transform: {
     "^.+\\.js$": "babel-jest",

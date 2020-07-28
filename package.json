@@ -7,11 +7,7 @@
     "email": "avi.mehanwal@gmail.com"
   },
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
-    "test:e2e": "vue-cli-service test:e2e",
-    "lint": "vue-cli-service lint"
+    "tbs": "yarn jest specs/test.spec.js -u && yarn --cwd ./Apps/default/ build && yarn --cwd ./Apps/default/ serve"
   },
   "main": "index.js",
   "dependencies": {
@@ -26,13 +22,16 @@
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
+    "vue-google-charts": "^0.3.3",
     "vue-jest": "^3.0.6",
     "vue-property-decorator": "^8.4.2",
     "vue-router": "^3.2.0",
     "vue-template-compiler": "^2.6.11",
+    "vuetify": "^2.2.11",
     "vuex": "^3.4.0"
   },
   "devDependencies": {
+    "@types/animejs": "^3.1.1",
     "@types/jest": "^24.0.19",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
@@ -47,12 +46,17 @@
     "@vue/cli-service": "~4.4.0",
     "@vue/eslint-config-typescript": "^5.0.2",
     "@vue/test-utils": "^1.0.3",
+    "animejs": "^3.2.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
     "node-sass": "^4.12.0",
+    "sass": "^1.19.0",
     "sass-loader": "^8.0.2",
     "typescript": "~3.9.3",
-    "vue-template-compiler": "^2.6.11"
+    "vue-cli-plugin-vuetify": "~2.0.7",
+    "vue-template-compiler": "^2.6.11",
+    "vuetify-loader": "^1.3.0",
+    "w3-css": "^4.1.0"
   },
   "_id": "vue-school-test-utils-base@1.0.0",
   "bugs": {
