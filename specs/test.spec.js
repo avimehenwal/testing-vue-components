@@ -1,4 +1,4 @@
-import TestComponent from '@/test'
+import TestComponent from '@/test.vue'
 import List from '@/list'
 
 import { mount } from '@vue/test-utils'
