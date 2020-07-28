@@ -14,6 +14,8 @@
 ## :wrench: Installation / How to run?
 
 ```
+yarn jest specs/test.spec.js -u; and yarn build; and yarn serve
+```
 
 
 ## Issues to Address
@@ -22,7 +24,6 @@
 
 ```
 vue add vue-next
-```
 ```
 
 ## :pushpin: ToDos
