@@ -21,10 +21,12 @@ Vue.use(VueRouter)
   {
     path: '/temperature',
     name: 'Temprature',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Temperature.vue')
+    component: () => import(/* webpackChunkName: "temperature" */ '../views/Temperature.vue')
+  },
+  {
+    path: '/todo',
+    name: 'Todo',
+    component: () => import(/* webpackChunkName: "todo" */ '../views/Todo.vue')
   }
 ]
 
