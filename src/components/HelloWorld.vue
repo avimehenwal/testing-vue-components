@@ -6,6 +6,7 @@
       :data="chartData"
       :options="chartOptions"
     />
+    <div class="w3-panel w3-red">Some panel</div>
   </v-container>
 </template>
 
@@ -13,6 +14,8 @@
   import Vue from 'vue'
   import TestComponent from '@/../components/test.vue'
   import { GChart } from 'vue-google-charts'
+  import 'w3-css/w3.css'
+
 
   export default Vue.extend({
     name: 'HelloWorld',
