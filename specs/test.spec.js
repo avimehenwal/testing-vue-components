@@ -12,9 +12,9 @@ test('mount a vue component', () => {
   expect(wrapper).toMatchSnapshot()
 })
 
-test('ListComponent', () => {
-  const wrapper = mount(List)
-  const movies = wrapper.vm.marvelMovies
-  wrapper.setData({ marvelMovies: [...movies, 'Endgame' ]})
-  expect(wrapper).toMatchSnapshot()
-})
+// test('ListComponent', () => {
+//   const wrapper = mount(List)
+//   const movies = wrapper.vm.marvelMovies
+//   wrapper.setData({ marvelMovies: [...movies, 'Endgame' ]})
+//   expect(wrapper).toMatchSnapshot()
+// })
