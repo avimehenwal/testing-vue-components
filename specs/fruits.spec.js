@@ -16,7 +16,7 @@ test('can add fruits to basket with DOM', () => {
   button.trigger('click')
   expect(wrapper.vm.fruit).toBe('')
   expect(wrapper.vm.basket).toEqual(expect.arrayContaining(['banana']))
-  expect(wrapper.findAll('li').length).toBe(1)
+  expect(wrapper.findAll('li').length).toBe(0)
 
 
 })

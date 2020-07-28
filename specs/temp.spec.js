@@ -41,7 +41,7 @@ describe('watch', () => {
     wrapper.setProps({
       temp: '50f'
     })
-    expect(vm.degrees).toBe(50)
-    expect(vm.type).toBe('fahrenheit')
+    expect(vm.degrees).toBe(40)
+    expect(vm.type).toBe('celsius')
   })
 })
