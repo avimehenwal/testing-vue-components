@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container id="links">
     <TestComponent value="avi" />
     <GChart
       type="ColumnChart"
@@ -7,6 +7,7 @@
       :options="chartOptions"
     />
     <div class="w3-panel w3-red">Some panel</div>
+    <span>some link</span>
   </v-container>
 </template>
 
@@ -15,6 +16,7 @@
   import TestComponent from '@/../components/test.vue'
   import { GChart } from 'vue-google-charts'
   import 'w3-css/w3.css'
+  import anime from 'animejs/lib/anime.es.js'
 
 
   export default Vue.extend({
@@ -37,6 +39,15 @@
           subtitle: 'Sales, Expenses, and Profit: 2014-2017',
         }
       }
-    })
+    }),
+    mounted () {
+      anime({
+        targets: '#links',
+        translateX: 250,
+        rotate: '1turn',
+        backgroundColor: '#FFF',
+        duration: 8000
+      })
+    }
   })
 </script>
