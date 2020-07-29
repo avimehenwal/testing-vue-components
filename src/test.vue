@@ -11,7 +11,6 @@
 </template>
 
 <script>
-import 'w3-css/w3.css'
 import anime from 'animejs/lib/anime.es.js'
 
 export default {

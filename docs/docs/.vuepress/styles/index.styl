@@ -1,0 +1,100 @@
+/**
+ * Custom Styles here.
+ *
+ * ref：https://v1.vuepress.vuejs.org/config/#index-styl
+ */
+
+// .theme-default-content
+//   background: linear-gradient(180deg,#1867c0,#5cbbf6);
+
+.home .hero img
+  max-width 450px!important
+
+dl
+    // border: 3px outset $borderColor;
+    // padding: 0.5em;
+    margin 1em 1em 1em 1em
+
+dt
+    // float: left;
+    // clear: left;
+    // width: 100px;
+    // text-align: right;
+    font-weight: bold
+    color: $blueL
+    // text-decoration: underline;
+
+dt::after
+    content: ":";
+
+dd
+    margin: 0 0 0 2em;
+    padding: 0 0 0.5em 0;
+
+.social-share-icon-svg
+    color: $badgeErrorColor
+
+// container styles
+.theorem
+  margin 1rem 0
+  padding .1rem 1.5rem
+  border-radius $BorderRadius
+  background-color $containerBg
+  text-align center
+  .title
+    font-weight bold
+
+.custom-block
+  &.right
+    color transparentify($textColor, 0.4)
+    font-size 0.9rem
+    text-align right
+
+.quote
+  margin 1rem 0
+  padding .1rem 1.5rem
+  background-color #f0f4f8
+  border-color #4B8BBE
+  border-left-width 0.5rem
+  border-left-style solid
+  .title
+    color transparentify($textColor, 0.4)
+    font-weight light
+    font-size 0.9rem
+    text-align right
+  & p:nth-child(2)
+    font-size: 1.2rem
+    font-style: italic
+    text-align center
+
+// Latex Styles
+mjx-container.MathJax
+    font-weight: bold
+    padding: $Padding
+    border-radius: $BorderRadius
+    background: $containerbg
+    color: $githubRed
+
+mark
+    border-radius: 0.4rem
+    padding: 0rem 0.3rem 0.1rem
+    background: $yellowL
+    color: $greyL
+    // padding-left: 5px
+    // padding-right: 5px
+    // padding-top: 2px
+    // padding-bottom: 2px
+
+// Style Containers
+.custom-block.tip
+  border-color $blueL
+
+// code text color
+.theme-default-content code
+  color $githubRed
+
+// vue issue
+$vssue-theme-color ?= $accentColor
+$vssue-text-color ?= $textColor
+$vssue-border-color ?= $borderColor
+$vssue-breakpoint-mobile ?= $MQMobile
