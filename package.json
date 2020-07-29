@@ -1,7 +1,7 @@
 {
   "name": "@avi/vue-components",
-  "version": "1.0.0",
-  "private": true,
+  "version": "1.0.1",
+  "description": "Reusable vue components",
   "author": {
     "name": "Avi Mehenwal",
     "email": "avi.mehanwal@gmail.com"
@@ -10,30 +10,17 @@
     "serve": "yarn --cwd ./Apps/default/ serve",
     "build:umd": "yarn --cwd ./Apps/default/ vue-cli-service build --target lib --inline-vue",
     "build": "yarn --cwd ./Apps/default/ build",
+    "pub": "npm publish --dry-run && yarn --verbose publish",
     "tbs": "yarn jest && yarn build && yarn serve"
   },
-  "main": "index.js",
-  "dependencies": {
-    "@babel/core": "^7.3.4",
-    "@babel/preset-env": "^7.3.4",
-    "@vue/test-utils": "^1.0.3",
-    "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^24.5.0",
-    "core-js": "^3.6.5",
-    "jest": "^24.5.0",
-    "jest-serializer-vue": "^2.0.2",
-    "register-service-worker": "^1.7.1",
-    "vue": "^2.6.11",
-    "vue-class-component": "^7.2.3",
-    "vue-google-charts": "^0.3.3",
-    "vue-jest": "^3.0.6",
-    "vue-property-decorator": "^8.4.2",
-    "vue-router": "^3.2.0",
-    "vue-template-compiler": "^2.6.11",
-    "vuetify": "^2.2.11",
-    "vuex": "^3.4.0"
-  },
+  "main": "src/index.js",
+  "files": [
+    "src/*"
+  ],
+  "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
     "@types/animejs": "^3.1.1",
     "@types/jest": "^24.0.19",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
@@ -50,27 +37,49 @@
     "@vue/eslint-config-typescript": "^5.0.2",
     "@vue/test-utils": "^1.0.3",
     "animejs": "^3.2.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^26.1.0",
+    "core-js": "^3.6.5",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
     "faker": "^4.1.0",
+    "jest": "^26.1.0",
+    "jest-serializer-vue": "^2.0.2",
     "node-sass": "^4.12.0",
+    "register-service-worker": "^1.7.1",
     "sass": "^1.19.0",
     "sass-loader": "^8.0.2",
     "typescript": "~3.9.3",
+    "vue": "^2.6.11",
+    "vue-class-component": "^7.2.5",
     "vue-cli-plugin-vuetify": "~2.0.7",
+    "vue-google-charts": "^0.3.3",
+    "vue-jest": "^3.0.6",
+    "vue-property-decorator": "^9.0.0",
+    "vue-router": "^3.3.4",
     "vue-template-compiler": "^2.6.11",
+    "vuetify": "^2.3.6",
     "vuetify-loader": "^1.3.0",
+    "vuex": "^3.5.1",
     "w3-css": "^4.1.0"
   },
-  "_id": "vue-school-test-utils-base@1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "bugs": {
     "url": "https://github.com/avimehenwal/vue-components/issues"
   },
   "homepage": "https://github.com/avimehenwal/vue-components#readme",
   "license": "MIT",
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com:avimehenwal/vue-components.git"
-  }
+  },
+  "keywords": [
+    "vuejs",
+    "vue",
+    "component",
+    "vue2",
+    "vuejs2"
+  ]
 }
