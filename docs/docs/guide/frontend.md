@@ -26,4 +26,6 @@ How does HTML Forms work?
     * use `name` attribute with `<input>` tag
     * `value` $\approx$ `placeholder` attributes are similar
 
+* https://stackoverflow.com/questions/49656706/test-es6-modules-with-jest/49656707#49656707
+*
 <Footer />
