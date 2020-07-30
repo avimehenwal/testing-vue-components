@@ -1,4 +1,12 @@
 [build]
   base = "docs/"
-  command = "yarn build"
+  command = "yarn run build"
   publish = "docs/.vuepress/dist"
+
+[context.deploy-preview]
+
+[context.branch-deploy]
+  command = "yarn run build"
+
+[context.branch-deploy.environment]
+  NODE_VERSION = "10.19.0"
