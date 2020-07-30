@@ -1,7 +1,7 @@
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c5da4a7a-43e1-492b-adb6-315663bb3462/deploy-status)](https://app.netlify.com/sites/frosty-rosalind-5c2a3b/deploys)
 [![badge1][badge1-img]][link1]
 
-[badge1-img]: https://img.shields.io/badge/<LABEL>-<MESSAGE>-<COLOR>
+[badge1-img]: https://img.shields.io/badge/avi-mehenwal-yellow
 [link1]: https://github.com/avimehenwal
 
 # :open_file_folder: @avi/vue-components
@@ -50,7 +50,7 @@ MIT
 ## :cyclone: References / Resources
 
 
-[url]: liveLink
+[url]: https://avi-vue-components.netlify.app/
 [issue]: issue
 [changelog]: ./CHANGELOG.md
 

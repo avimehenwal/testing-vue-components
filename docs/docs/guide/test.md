@@ -11,8 +11,6 @@ tags:
 
 <TagLinks />
 
-<ReadTime />
-
-{{ $page }}
+{{ $site }}
 
 <Footer />
