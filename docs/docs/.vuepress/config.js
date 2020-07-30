@@ -89,12 +89,11 @@ module.exports = {
     [ '@vssue/vuepress-plugin-vssue', {
         // set `platform` rather than `api`
         platform: 'github',
-
         // all other options of Vssue are allowed
         owner: 'avimehenwal',
         repo: 'vue-components',
-        clientId: 'f21ef16a729a31ca89d9',
-        clientSecret: '4d34641890361267c8f3c819f094288ad57cfb7c',
+        clientId: process.env.GH_clientId,
+        clientSecret: process.env.GH_ClientSecret,
       }
     ],
     [
