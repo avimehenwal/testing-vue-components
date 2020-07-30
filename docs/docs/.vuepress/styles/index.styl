@@ -81,16 +81,21 @@ mark
     background: $mark
     color: $textColor
 
+
 // Style Containers
 .custom-block.tip
   border-color $blueL
 
 // code text color
 .theme-default-content code
-  color #0b64c7
+  // color #0b64c7
+  color: $codeColor
+  font-family: SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace
+  font-size: 1rem
 
 // vue issue
 $vssue-theme-color ?= $accentColor
 $vssue-text-color ?= $textColor
 $vssue-border-color ?= $borderColor
 $vssue-breakpoint-mobile ?= $MQMobile
+

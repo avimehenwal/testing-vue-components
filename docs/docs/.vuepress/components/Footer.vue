@@ -1,12 +1,53 @@
 <template>
   <div>
+
+  <!-- <form action="https://www.getrevue.co/profile/avimehenwal/add_subscriber"
+  method="post" id="revue-form" name="revue-form"  target="_blank">
+  <div class="revue-form-group">
+    <label for="member_email">Email address</label>
+    <input class="revue-form-field" placeholder="Your email address..." type="email" name="member[email]" id="member_email">
+  </div>
+  <div class="revue-form-group">
+    <label for="member_first_name">First name <span class="optional">(Optional)</span></label>
+    <input class="revue-form-field" placeholder="First name... (Optional)" type="text" name="member[first_name]" id="member_first_name">
+  </div>
+  <div class="revue-form-group">
+    <label for="member_last_name">Last name <span class="optional">(Optional)</span></label>
+    <input class="revue-form-field" placeholder="Last name... (Optional)" type="text" name="member[last_name]" id="member_last_name">
+  </div>
+  <div class="revue-form-actions">
+    <input type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
+  </div>
+  </form>
+</div> -->
+
     <div id="news">
       <h3> {{ message}} </h3>
-
-      <form class="newsletter-form" id="revue-form" name="revue-form" target="_blank" rel="noopener" :action="action" method="post" @submit="subscribe">
-        <input class="newsletter-input" type="email" name="member[email]" id="member_email" required="" placeholder="Email address">
-
-        <input class="button newsletter-button" type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
+      <form
+        :action="actionUrl"
+        method="post"
+        name="revue-form"
+        id="revue-form"
+        class="newsletter-form"
+        target="_blank"
+        rel="noopener"
+      >
+        <input
+          name="member[email]"
+          id="member_email"
+          class="newsletter-input"
+          type="email"
+          placeholder="Email address"
+          required
+        >
+        <input
+          name="member[subscribe]"
+          id="member_submit"
+          class="button newsletter-button"
+          type="submit"
+          value="Subscribe"
+        >
+        <!-- type=reset button -->
       </form>
     </div>
 
@@ -19,7 +60,7 @@ export default {
   data () {
     return {
       message: 'Subscribe to our Newsletter',
-      action: 'https://www.getrevue.co/profile/avimehenwal/add_subscriber'
+      actionUrl: 'https://www.getrevue.co/profile/avimehenwal/add_subscriber'
     }
   }
 }

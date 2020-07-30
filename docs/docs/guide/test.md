@@ -11,6 +11,10 @@ tags:
 
 <TagLinks />
 
-{{ $site }}
+{{ $page }}
+
+`pwd` is a linux command
+
+<Test />
 
 <Footer />

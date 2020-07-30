@@ -1,5 +1,6 @@
 require('dotenv').config()
 const { description } = require('../../package')
+const webpack = require('webpack')
 
 const extendsNetworks = {
   email: {
@@ -23,10 +24,16 @@ const extendsNetworks = {
 }
 
 module.exports = {
+  configureWebpack: (config) => {
+    return { plugins: [
+      new webpack.EnvironmentPlugin({ ...process.env })
+    ]}
+  },
   title: '@avi/vue-components',
   description: description,
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'stylesheet', href: '/w3.css' }],        // load css from public
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
@@ -93,7 +100,7 @@ module.exports = {
         // all other options of Vssue are allowed
         owner: 'avimehenwal',
         repo: 'vue-components',
-        clientId: process.env.GH_clientId,
+        clientId: process.env.GH_ClientId,
         clientSecret: process.env.GH_ClientSecret,
       }
     ],
