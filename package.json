@@ -7,7 +7,8 @@
     "email": "avi.mehanwal@gmail.com"
   },
   "scripts": {
-    "serve": "yarn --cwd ./Apps/default/ serve",
+
+    "serve:app": "yarn --cwd ./Apps/default/ serve",
     "build:app:umd": "yarn run clean && yarn --cwd ./Apps/default/ vue-cli-service build --target lib --inline-vue --report && yarn run ls",
     "build:app": "yarn run clean && yarn --cwd ./Apps/default/ build --report && yarn run ls",
     "tbs": "yarn jest && yarn build && yarn serve",
@@ -79,8 +80,7 @@
     "vue-template-compiler": "^2.6.11",
     "vuetify": "^2.3.6",
     "vuetify-loader": "^1.3.0",
-    "vuex": "^3.5.1",
-    "w3-css": "^4.1.0"
+    "vuex": "^3.5.1"
   },
   "publishConfig": {
     "access": "public"
