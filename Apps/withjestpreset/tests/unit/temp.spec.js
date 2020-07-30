@@ -1,4 +1,4 @@
-import Temprature from '@/temprature'
+import Temprature from '@/components/temprature'
 import { mount } from '@vue/test-utils'
 
 describe('computed', () => {

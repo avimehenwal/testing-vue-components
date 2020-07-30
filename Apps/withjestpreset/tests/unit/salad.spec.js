@@ -2,8 +2,8 @@ import Vuex from 'vuex'
 import Vue from 'vue'
 import { mount, createLocalVue } from '@vue/test-utils'
 
-import SaladBowlComponent from '@/salad-bowl'
-import saladStore from '@/store/salad-store'
+import SaladBowlComponent from '@/components/salad-bowl'
+import saladStore from '@/components/store/salad-store'
 
 const VueWithVuex = createLocalVue()
 VueWithVuex.use(Vuex)

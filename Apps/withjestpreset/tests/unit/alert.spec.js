@@ -1,4 +1,4 @@
-import AlertMessage from '@/alert-message'
+import AlertMessage from '@/components/alert-message'
 import { mount } from '@vue/test-utils'
 
 jest.useFakeTimers()
