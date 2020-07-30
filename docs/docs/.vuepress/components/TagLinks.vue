@@ -2,6 +2,8 @@
 
 <template lang="html">
   <div>
+    <Badge type="warning" vertical="top" :text="this.text" />
+
     <router-link
       style="margin-right:3px;"
       v-for="tag in $page.frontmatter.tags"
@@ -16,3 +18,20 @@
     </span> -->
   </div>
 </template>
+
+<script>
+  export default {
+    computed: {
+      words () {
+        return this.$page.readingTime.words + ' words'
+      },
+      text () {
+        return this.$page.readingTime.text + ', ' + this.words
+      }
+    }
+  }
+</script>
+
+<style scoped>
+
+</style>

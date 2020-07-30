@@ -57,7 +57,6 @@ module.exports = {
     sidebar: 'auto',
     sidebarDepth: 2,
     searchPlaceholder: 'Search...',
-    lastUpdated: 'Last Updated',
     smoothScroll: true,
     nav: [
       { text: 'Guide', link: '/guide/', },
@@ -77,8 +76,9 @@ module.exports = {
     "vuepress-plugin-auto-sidebar",
     "@vuepress/plugin-nprogress",
     "@vuepress/plugin-blog",
+    "reading-progress",
     "@vuepress/pwa",
-    'img-lazy',
+    "img-lazy",
     ['@dovyp/vuepress-plugin-clipboard-copy', true],
     [
       'sitemap',

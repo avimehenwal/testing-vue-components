@@ -11,8 +11,10 @@ tags:
 
 <TagLinks />
 
-* Create scaffold from installed starter-kits. <Badge type="tip" vertical="middle" text="For Example," /> `yarn create vuepress docs`
+* Create scaffold from installed starter-kits. <Badge type="warning" vertical="middle" text="For Example," /> `yarn create vuepress docs`
 * The `z-index` property specifies the stack order of an element.
+* ==Coolest== color combinations
+* Vue icon library [vue-feather-icons](https://vue-feather-icons.egoist.sh/)
 
 <Badge type="tip" vertical="middle" text="For Example," />
 <Badge type="error" vertical="middle" text="For Example," />
@@ -34,7 +36,7 @@ Learns
 
 ```sh
 # vuepress plugins
-yarn add -D vuepress-plugin-container vuepress-plugin-mathjax vuepress-plugin-mermaidjs @vuepress/plugin-nprogress vuepress-plugin-auto-sidebar @vuepress/plugin-back-to-top @vuepress/plugin-blog @vuepress/plugin-medium-zoom @vuepress/plugin-last-updated @vuepress/plugin-active-header-links @vuepress/plugin-google-analytics @vuepress/plugin-pwa @dovyp/vuepress-plugin-clipboard-copy sitemap vuepress-plugin-reading-time vuepress-plugin-img-lazy vuepress-plugin-social-share
+yarn add -D vuepress-plugin-container vuepress-plugin-mathjax vuepress-plugin-mermaidjs @vuepress/plugin-nprogress vuepress-plugin-auto-sidebar @vuepress/plugin-back-to-top @vuepress/plugin-blog @vuepress/plugin-medium-zoom @vuepress/plugin-last-updated @vuepress/plugin-active-header-links @vuepress/plugin-google-analytics @vuepress/plugin-pwa @dovyp/vuepress-plugin-clipboard-copy sitemap vuepress-plugin-reading-time vuepress-plugin-img-lazy vuepress-plugin-social-share vuepress-plugin-reading-progress
 
 
 # markdown plugins
