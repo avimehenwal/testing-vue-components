@@ -6,35 +6,44 @@
     "name": "Avi Mehenwal",
     "email": "avi.mehanwal@gmail.com"
   },
-  "scripts": {
-    "docs": "yarn --cwd ./docs/ dev",
-    "dev": "yarn --cwd ./Apps/withjestpreset/ serve",
-    "test": "yarn --cwd ./Apps/withjestpreset/ test:unit",
-    "remove:all": "yarn remove $(ls -1 node_modules | tr '/\n' ' ')",
-    "serve:app": "yarn --cwd ./Apps/default/ serve",
-    "build:app:umd": "yarn run clean && yarn --cwd ./Apps/default/ vue-cli-service build --target lib --inline-vue --report && yarn run ls",
-    "build:app": "yarn run clean && yarn --cwd ./Apps/default/ build --report && yarn run ls",
-    "tbs": "yarn jest && yarn build && yarn serve",
-    "clean": "rm -rfv ./Apps/default/dist/",
-    "ls": "tree ./Apps/default/dist/",
-    "pub": "npm publish --dry-run && yarn --verbose publish",
-    "build": "yarn run build:umd & yarn run build:es & yarn run build:unpkg",
-    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/my-component.umd.js",
-    "build:es": "rollup --config build/rollup.config.js --format es --file dist/my-component.esm.js",
-    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/my-component.min.js"
-  },
-  "files": [
-    "src/*"
-  ],
   "main": "dist/my-component.umd.js",
   "module": "dist/my-component.esm.js",
   "unpkg": "dist/my-component.min.js",
   "browser": {
     "./sfc": "src/my-component.vue"
   },
-  "dependencies": {
+  "files": [
+    "Apps/withjestpreset/src/components/*"
+  ],
+  "scripts": {
+    "docs": "yarn --cwd ./docs/ dev",
+    "dev": "yarn --cwd ./Apps/withjestpreset/ serve",
+    "test": "yarn --cwd ./Apps/withjestpreset/ test:unit",
+    "remove:all": "yarn remove $(ls -1 node_modules | tr '/\n' ' ')",
+    "serve:app": "yarn --cwd ./Apps/default/ serve",
+    "build:app": "yarn run clean && yarn --cwd ./Apps/default/ build --report && yarn run ls",
+    "build:app:umd": "yarn run clean && yarn --cwd ./Apps/default/ vue-cli-service build --target lib --inline-vue --report && yarn run ls",
+    "tbs": "yarn jest && yarn build && yarn serve",
+    "clean": "rm -rfv ./Apps/default/dist/ ./Apps/withjestpreset/dist/",
+    "ls": "tree ./Apps/withjestpreset/dist/",
+    "pub": "npm publish --dry-run && yarn --verbose publish",
+    "build:umd": "rollup --config rollup.config.js --format umd --file dist/my-component.umd.js",
+    "build:es": "rollup --config rollup.config.js --format es --file dist/my-component.esm.js",
+    "build:unpkg": "rollup --config rollup.config.js --format iife --file dist/my-component.min.js",
+    "build": "rollup --config rollup.config.js; tree dist/"
   },
+  "dependencies": {},
   "devDependencies": {
+    "@rollup/plugin-buble": "^0.21.3",
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "@vue/compiler-sfc": "^3.0.0-rc.5",
+    "rollup": "^2.23.0",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.4.0",
+    "rollup-plugin-vue": "^6.0.0-beta.10",
+    "vue": "^2.6.11",
+    "vue-template-compiler": "^2.6.11"
   },
   "publishConfig": {
     "access": "public"

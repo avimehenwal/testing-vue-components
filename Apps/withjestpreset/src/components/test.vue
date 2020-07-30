@@ -13,6 +13,7 @@
 <script>
 
 export default {
+  name: 'TestComponent',
   props: {
     value: {
       type: String,
