@@ -11,7 +11,6 @@
 </template>
 
 <script>
-import anime from 'animejs/lib/anime.es.js'
 
 export default {
   props: {
@@ -19,15 +18,6 @@ export default {
       type: String,
       default: 'Test'
     }
-  },
-  mounted () {
-    anime({
-      targets: '#ani1',
-      translateX: 250,
-      rotate: '1turn',
-      backgroundColor: '#87ceeb',
-      duration: 8000
-    })
   }
 }
 </script>

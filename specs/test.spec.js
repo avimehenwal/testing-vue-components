@@ -4,7 +4,7 @@ import List from '@/list'
 import { mount } from '@vue/test-utils'
 
 test('mount a vue component', () => {
-  const wrapper = shallowMount(TestComponent, {
+  const wrapper = mount(TestComponent, {
     propsData: {
       value: 'VueSchool'
     }
