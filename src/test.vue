@@ -6,12 +6,12 @@
       <span class="w3-yellow">
         {{ value }}
       </span>
-      </h2>
+    </h2>
   </div>
 </template>
 
 <script>
-// import anime from 'animejs/lib/anime.es.js'
+import anime from 'animejs/lib/anime.es.js'
 
 export default {
   props: {
@@ -21,13 +21,13 @@ export default {
     }
   },
   mounted () {
-    // anime({
-    //   targets: '#ani1',
-    //   translateX: 250,
-    //   rotate: '1turn',
-    //   backgroundColor: '#87ceeb',
-    //   duration: 8000
-    // })
+    anime({
+      targets: '#ani1',
+      translateX: 250,
+      rotate: '1turn',
+      backgroundColor: '#87ceeb',
+      duration: 8000
+    })
   }
 }
 </script>
