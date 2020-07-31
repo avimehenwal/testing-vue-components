@@ -28,4 +28,4 @@ jobs:
           cmd: build # will run `yarn build` command
       - uses: borales/actions-yarn@v2.0.0
         with:
-          cmd: jest # will run `yarn test` command
+          cmd: test
