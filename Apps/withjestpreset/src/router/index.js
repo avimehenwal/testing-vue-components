@@ -21,8 +21,12 @@ Vue.use(VueRouter)
   {
     path: '/w3test',
     name: 'W3Test',
-    // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "w3test" */ '../views/W3Test.vue')
+  },
+  {
+    path: '/card',
+    name: 'Card',
+    component: () => import(/* webpackChunkName: "w3test" */ '../views/Card.vue')
   }
 ]
 

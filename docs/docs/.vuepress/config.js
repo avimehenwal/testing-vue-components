@@ -1,6 +1,8 @@
 require('dotenv').config()
-const { description } = require('../../package')
 const webpack = require('webpack')
+// Read and reuse information from package.json at root
+const pkg = require('../../../package.json')
+
 
 const extendsNetworks = {
   email: {
@@ -29,8 +31,8 @@ module.exports = {
       new webpack.EnvironmentPlugin({ ...process.env })
     ]}
   },
-  title: '@avi/vue-components',
-  description: description,
+  title: `${pkg.name} v${pkg.version}`,
+  description: pkg.description,
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['link', { rel: 'stylesheet', href: '/w3.css' }],        // load css from public
@@ -51,7 +53,7 @@ module.exports = {
     }
   },
   themeConfig: {
-    author: 'avimehenwal',
+    author: pkg.author.name,
     repo: 'avimehenwal/vue-components',
     repoLabel: 'GitHub',
     editLinks: true,
@@ -104,7 +106,7 @@ module.exports = {
     [
       '@vuepress/google-analytics',
       {
-        'ga': '' // UA-00000000-0
+        'ga': process.env.GA    // UA-00000000-0
       }
     ],
     ['vuepress-plugin-reading-time', {
@@ -129,6 +131,13 @@ module.exports = {
         axisFormat:'%Y-%m-%d',
       }
     }],
+    [
+      '@vuepress/register-components',
+      {
+        // componentsDir: `../../node_modules/${pkg.name}`
+        componentsDir: `${__dirname}/../../../Apps/withjestpreset/src/components`
+      }
+    ],
     [
       'vuepress-plugin-mathjax',
       {

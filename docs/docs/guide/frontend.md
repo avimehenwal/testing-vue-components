@@ -10,6 +10,7 @@ tags:
 
 <TagLinks />
 
+
 How to determine if CSS is loaded?
 :   Watch devtools:Network panel
 
@@ -51,5 +52,26 @@ Create custom directives in vuejs, like `v-purple` or `v-anime`?
 
 * [How to use babel with jest?](https://jestjs.io/docs/en/getting-started#using-babel)
 
+## Publishing
+
+* [Scoped - namespace](https://docs.npmjs.com/misc/scope)
+
+### For vuepress website
+
+* I get all component files inside `node_modules` directory
+* Then let vuepressa [register them as global components](https://vuepress.vuejs.org/plugin/official/plugin-register-components.html#install)
+
+```bash
+yarn add -D @vuepress/plugin-register-components
+```
+
+```js
+[
+  'register-components',
+  {
+    componentsDir: '../../node_modules/src/components'
+  }
+]
+```
 
 <Footer />
