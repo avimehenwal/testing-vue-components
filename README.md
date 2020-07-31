@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c5da4a7a-43e1-492b-adb6-315663bb3462/deploy-status)](https://app.netlify.com/sites/frosty-rosalind-5c2a3b/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c5da4a7a-43e1-492b-adb6-315663bb3462/deploy-status)](https://app.netlify.com/sites/avi-vue-components/deploys)
 [![badge1][badge1-img]][link1]
 
 [badge1-img]: https://img.shields.io/badge/avi-mehenwal-yellow

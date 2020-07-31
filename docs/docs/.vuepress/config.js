@@ -54,8 +54,6 @@ module.exports = {
     author: 'avimehenwal',
     repo: 'avimehenwal/vue-components',
     repoLabel: 'GitHub',
-    repo: '',
-    docsDir: '',
     editLinks: true,
     editLinkText: 'Help me improve this page!',
     lastUpdated: true,
@@ -69,7 +67,6 @@ module.exports = {
     nav: [
       { text: 'Guide', link: '/guide/', },
       { text: 'Config', link: '/config/' },
-      { text: 'VuePress', link: 'https://v1.vuepress.vuejs.org' }
     ]
   },
 
