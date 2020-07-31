@@ -1,15 +1,15 @@
 ---
 home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
+heroImage: /abucoins.svg
 tagline: vue components framework
-actionText: Quick Start →
+actionText: 🤘 Quick Start 👉
 actionLink: /guide/
 features:
-- title: Feature 1 Title
-  details: Feature 1 Description
-- title: Feature 2 Title
-  details: Feature 2 Description
-- title: Feature 3 Title
-  details: Feature 3 Description
+- title: ♻️ Reusable
+  details: Reusable components
+- title: ⛏ Tested
+  details: Unittest with popular jest
+- title: 😎 Lightweight
+  details: Depends only on 20kb css
 footer: Made by Avi Mehenwal with ❤️
 ---
