@@ -36,7 +36,7 @@ Learns
 
 ```sh
 # vuepress plugins
-yarn add -D vuepress-plugin-container vuepress-plugin-mathjax vuepress-plugin-mermaidjs @vuepress/plugin-nprogress vuepress-plugin-auto-sidebar @vuepress/plugin-back-to-top @vuepress/plugin-blog @vuepress/plugin-medium-zoom @vuepress/plugin-last-updated @vuepress/plugin-active-header-links @vuepress/plugin-google-analytics @vuepress/plugin-pwa @dovyp/vuepress-plugin-clipboard-copy sitemap vuepress-plugin-reading-time vuepress-plugin-img-lazy vuepress-plugin-social-share vuepress-plugin-reading-progress @vuepress/plugin-register-components
+yarn add -D vuepress-plugin-container vuepress-plugin-mathjax vuepress-plugin-mermaidjs @vuepress/plugin-nprogress vuepress-plugin-auto-sidebar @vuepress/plugin-back-to-top @vuepress/plugin-blog @vuepress/plugin-medium-zoom @vuepress/plugin-last-updated @vuepress/plugin-active-header-links @vuepress/plugin-google-analytics @vuepress/plugin-pwa @dovyp/vuepress-plugin-clipboard-copy  vuepress-plugin-reading-time vuepress-plugin-img-lazy vuepress-plugin-social-share vuepress-plugin-reading-progress @vuepress/plugin-register-components
 
 
 # markdown plugins

@@ -2,7 +2,7 @@ require('dotenv').config()
 const webpack = require('webpack')
 // Read and reuse information from package.json at root
 const pkg = require('../../../package.json')
-
+const weburl = 'https://avi-vue-components.netlify.app/'
 
 const extendsNetworks = {
   email: {
@@ -55,6 +55,8 @@ module.exports = {
   themeConfig: {
     author: pkg.author.name,
     repo: 'avimehenwal/vue-components',
+    // repo: pkg.repository.url,
+    // href="https://github.com/[object Object]" https://github.com/git+https://github.com:avimehenwal/vue-components.git
     repoLabel: 'GitHub',
     editLinks: true,
     editLinkText: 'Help me improve this page!',
@@ -82,27 +84,36 @@ module.exports = {
     "@vuepress/plugin-back-to-top",
     "vuepress-plugin-auto-sidebar",
     "@vuepress/plugin-nprogress",
-    "@vuepress/plugin-blog",
     "reading-progress",
     "@vuepress/pwa",
     "img-lazy",
     ['@dovyp/vuepress-plugin-clipboard-copy', true],
-    [
-      'sitemap',
-      {
-        hostname: 'https://avimehenwal2.netlify.app/'
-      },
-    ],
-    [ '@vssue/vuepress-plugin-vssue', {
+    ['@vuepress/blog', {
+      // mailchimp email marketting service
+      newsletter: { endpoint: process.env.MailChimp },
+      sitemap: { hostname: weburl },
+      feed: { canonical_base: weburl },
+      comment: {
+        service: 'vssue',
         // set `platform` rather than `api`
         platform: 'github',
-        // all other options of Vssue are allowed
         owner: 'avimehenwal',
         repo: 'vue-components',
         clientId: process.env.GH_ClientId,
         clientSecret: process.env.GH_ClientSecret,
-      }
-    ],
+        // OR
+        // service: 'disqus',
+        // shortname: process.env.DISQUS_ShortName,
+      },
+      // Calssification and Taxonomy
+      directories: [
+        { id: 'post', dirname: '_posts', path: '/', layout: 'MyIndexPost',
+          itemLayout: 'MyPost',
+          pagination: { lengthPerPage: 2 },
+        },
+        { id: 'guide', dirname: 'guide', path: '/guide', },
+      ],
+    }],
     [
       '@vuepress/google-analytics',
       {

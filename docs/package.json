@@ -7,7 +7,11 @@
     "name": "Avi Mehenwal",
     "email": "avi.mehanwal@gmail.com"
   },
-  "repository": "https://github.com/avimehenwal/vue-components/@avi/vue-components",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avimehenwal/vue-components.git",
+    "directory": "docs"
+  },
   "scripts": {
     "dev": "vuepress dev docs",
     "debug": "vuepress dev --debug docs",
@@ -36,7 +40,6 @@
     "markdown-it-mark": "^3.0.0",
     "markdown-it-sub": "^1.0.0",
     "markdown-it-sup": "^1.0.0",
-    "sitemap": "^6.2.0",
     "social-share": "^0.1.0",
     "vue-google-charts": "^0.3.3",
     "vuepress": "^1.3.1",
