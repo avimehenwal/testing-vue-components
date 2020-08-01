@@ -1,5 +1,7 @@
-// Import vue component
-import component from './test.vue';
+// Component Registration
+// https://vuejs.org/v2/guide/components-registration.html#Automatic-Global-Registration-of-Base-Components
+import component from './test.vue'
+import temprature from 'temprature.vue'
 
 // Declare install function executed by Vue.use()
 export function install(Vue) {
@@ -25,4 +27,16 @@ if (GlobalVue) {
 }
 
 // To allow use as module (npm/webpack/etc.) export component
-export default component;
+export default {
+	component,
+	temprature,
+	component3
+}
+
+// https://forum.vuejs.org/t/import-all-components-from-a-specific-folder/9980
+// in enhancement.js
+// import components from '@/components/module'
+
+// new Vue({
+// 	components : components
+//  }
